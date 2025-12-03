@@ -26,7 +26,7 @@ def extract(data_dir: str, start_week: int, end_week: int, prefix: str) -> pd.Da
     """
     df = pd.DataFrame()
     for i in range(start_week, end_week + 1):
-        file_path = os.path.join(data_dir, 'batchs', f'{prefix}_week_{i}.csv')
+        file_path = os.path.join(data_dir, 'batchs', f'{prefix}_week_{str(i).zfill(3)}.csv')
         if os.path.isfile(file_path):
             batch = pd.read_csv(file_path)
             df = pd.concat([df, batch], sort=True)
