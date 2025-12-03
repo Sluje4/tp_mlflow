@@ -1,6 +1,6 @@
 # Documentation
 
-* [Set up](documentation/setup.md)
+* [Set up](/setup.md)
 * [Data](documentation/data.md)
 * [Exercises](documentation/exercises.md)
 * [Entry points](documentation/entry_points.md)
